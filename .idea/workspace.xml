@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd4c2db3-e952-4974-9596-08553fbabc74" name="Changes" comment="" />
+    <list default="true" id="bd4c2db3-e952-4974-9596-08553fbabc74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/components/ParentApplication/ConfirmApplication/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/components/ParentApplication/CreateParentApplication/SearchSchool.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/available-applications.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/available-children.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/parent-applications.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/schools.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-available-applications-columns.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-parent-applications-table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-students-table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/admin-applications.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/child-selection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/create-application.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/parent-applications.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/view-parent-application.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/Parent/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/School/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/components/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/db/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/pages/forgot-password.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/pages/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/pages/signUp.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Layout/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/db/menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/dashboard/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,20 +61,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/princemalipula/Projects/React/Inspirations/sms",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/princemalipula/Projects/React/Inspirations/sms/src/modules&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/princemalipula/Projects/React/Inspirations/sms/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules" />
+      <recent name="$PROJECT_DIR$/src/modules/dashboard/lib" />
+      <recent name="$PROJECT_DIR$/src/modules/dashboard" />
+      <recent name="$PROJECT_DIR$/src/modules/auth" />
+      <recent name="$PROJECT_DIR$/src/modules/auth/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/common" />
+      <recent name="$PROJECT_DIR$/src/entry-point" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,7 +97,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674456478155</updated>
-      <workItem from="1674456479563" duration="685000" />
+      <workItem from="1674456479563" duration="1707000" />
+      <workItem from="1674470109475" duration="16405000" />
+      <workItem from="1674494693658" duration="3072000" />
+      <workItem from="1674588688255" duration="9261000" />
     </task>
     <servers />
   </component>
