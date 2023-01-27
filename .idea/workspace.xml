@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd4c2db3-e952-4974-9596-08553fbabc74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/academic-years.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/admin-applications.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/classes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/db/students-applied.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-admin-applications-table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-applicants-table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-view-admin-applications-table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/create-application-admin.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/applications/pages/view-admin-applications.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/auth/pages/otp.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/common/lib/helpers/format-amount.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/common/lib/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entry-point/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entry-point/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/components/ParentApplication/ConfirmApplication/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/components/ParentApplication/ConfirmApplication/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/components/ParentApplication/CreateParentApplication/SearchSchool.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/components/ParentApplication/CreateParentApplication/SearchSchool.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/db/available-applications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/db/available-applications.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/db/parent-applications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/db/parent-applications.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/lib/hooks/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-available-applications-columns.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-available-applications-columns.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-parent-applications-table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-parent-applications-table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-students-table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-students-table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/pages/admin-applications.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/pages/admin-applications.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/applications/pages/view-parent-application.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/pages/view-parent-application.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/components/SignUp/Parent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/Parent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/components/SignUp/School/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/School/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/db/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/db/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/auth/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/pages/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/common/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/Layout/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="bd4c2db3-e952-4974-9596-08553fbabc74" name="Changes" comment="feat: improvements after discussion" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,8 +66,16 @@
       <workItem from="1674588688255" duration="9909000" />
       <workItem from="1674653022702" duration="8063000" />
       <workItem from="1674754892926" duration="1340000" />
-      <workItem from="1674826667798" duration="6599000" />
+      <workItem from="1674826667798" duration="6944000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: improvements after discussion">
+      <created>1674833579883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674833579883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,5 +91,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: improvements after discussion" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: improvements after discussion" />
   </component>
 </project>
