@@ -13,7 +13,7 @@ import {useNavigate} from "react-router-dom";
 const ParentSignUp = () => {
     const navigate = useNavigate()
 
-    const handleSubmit = (values: any) => {
+    const handleSubmit = (_values: any) => {
         navigate('/')
     }
 
@@ -78,21 +78,6 @@ const ParentSignUp = () => {
 
                 <Col span={12}>
                     <Form.Item
-                        label="Email"
-                        name="email"
-                        rules={
-                            [
-                                {required: true, message: 'Please input your email!'},
-                                {type: "email", message: "Please input valid email address!"}
-                            ]
-                        }
-                    >
-                        <Input/>
-                    </Form.Item>
-                </Col>
-
-                <Col span={12}>
-                    <Form.Item
                         label="Phone Number"
                         name="phone"
                         rules={
@@ -108,9 +93,39 @@ const ParentSignUp = () => {
 
                 <Col span={12}>
                     <Form.Item
-                        label="ID Number"
-                        name="idNumber"
-                        rules={[{required: true, message: 'Please input your ID Number!'}]}
+                        label="Alternative Number"
+                        name="alternativeNumber"
+                        rules={
+                            [
+                                {required: true, message: 'Please input your alternative number!'},
+                                {pattern: /[0-9]{9}/, message: 'Please input valid phone number!'}
+                            ]
+                        }
+                    >
+                        <Input addonBefore={prefixSelector} style={{width: '100%'}}/>
+                    </Form.Item>
+                </Col>
+
+                <Col span={12}>
+                    <Form.Item
+                        label="Email"
+                        name="email"
+                        rules={
+                            [
+                                {required: true, message: 'Please input your email!'},
+                                {type: "email", message: "Please input valid email address!"}
+                            ]
+                        }
+                    >
+                        <Input/>
+                    </Form.Item>
+                </Col>
+
+                <Col span={12}>
+                    <Form.Item
+                        label="Physical Address"
+                        name="physicalAddress"
+                        rules={[{required: true, message: 'Please select your physical address!'}]}
                     >
                         <Input/>
                     </Form.Item>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from "antd";
+import {Button, Tag} from "antd";
 import {Link} from "react-router-dom";
 
 /**
@@ -18,14 +18,17 @@ const useAvailableApplicationsColumns = () => {
             key: 'name',
         },
         {
-            title: 'Date',
-            dataIndex: 'date',
-            key: 'date',
+            title: 'Interview Date',
+            dataIndex: 'interviewDate',
+            key: 'interviewDate',
         },
         {
-            title: 'Venue',
-            dataIndex: 'venue',
-            key: 'venue',
+            title: 'Application Type',
+            dataIndex: 'applicationType',
+            key: 'applicationType',
+            render: (type: 'transfer' | 'new entry') => (
+                <Tag color={type === 'transfer' ? 'geekblue' : 'purple'}>{type}</Tag>
+            )
         },
         {
             title: 'Actions',

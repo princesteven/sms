@@ -3,6 +3,7 @@ import {Button, Modal, Table} from "antd";
 import {availableChildren} from "../db/available-children";
 import useStudentsTable from "../lib/hooks/use-students-table";
 import {useNavigate} from "react-router-dom";
+import {formatAmount} from "../../common/lib";
 
 /**
  * @function
@@ -32,9 +33,9 @@ const ViewParentApplication = () => {
         >
             <p>School Name: <span className="font-semibold">Maria Goretti Secondary School</span></p>
             <p>Application: <span className="font-semibold">Pre-Form One</span></p>
-            <p>Date: <span className="font-semibold">12th-January-2023</span></p>
-            <p>Time: <span className="font-semibold">12:00 PM</span></p>
-            <p>Venue: <span className="font-semibold">Dining Hall</span></p>
+            <p>Interview Date: <span className="font-semibold">12th-January-2023</span></p>
+            <p>Interview Time: <span className="font-semibold">12:00 PM</span></p>
+            <p>Amount: <span className="font-semibold">{formatAmount(20000)}/=</span></p>
 
             <p className="text-center font-semibold">Student Details</p>
 
@@ -42,6 +43,7 @@ const ViewParentApplication = () => {
                 dataSource={[availableChildren[0]]}
                 columns={columns}
                 rowKey={'id'}
+                pagination={false}
             />
         </Modal>
     )

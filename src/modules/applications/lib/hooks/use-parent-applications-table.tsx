@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Tag} from "antd";
-import {EyeOutlined, DeleteOutlined, FileDoneOutlined} from "@ant-design/icons";
 import {Link} from "react-router-dom";
+import {EyeOutlined} from "@ant-design/icons";
 
 /**
  * @function
@@ -12,7 +12,7 @@ import {Link} from "react-router-dom";
  * @author Prince Malipula
  */
 const useParentApplicationsTable = () => {
-    const generateStatusColor = (status: 'paid' | 'pending-payment' | 'awaiting-results' | 'view-results'): string => {
+    const generateStatusColor = (status: 'paid' | 'pending-payment' | 'awaiting-results' | 'pass' | 'fail'): string => {
         if (status === 'paid')
             return 'success';
 
@@ -22,7 +22,7 @@ const useParentApplicationsTable = () => {
         if (status === 'awaiting-results')
             return 'geekblue';
 
-        if (status === 'view-results')
+        if (status === 'pass')
             return 'success';
 
         return 'magenta';
@@ -35,9 +35,9 @@ const useParentApplicationsTable = () => {
             key: 'school',
         },
         {
-            title: 'Venue',
-            dataIndex: 'venue',
-            key: 'venue',
+            title: 'Request No.',
+            dataIndex: 'requestNo',
+            key: 'requestNo',
         },
         {
             title: 'Student',
@@ -50,15 +50,15 @@ const useParentApplicationsTable = () => {
             key: 'age',
         },
         {
-            title: 'Date',
-            dataIndex: 'date',
-            key: 'date',
+            title: 'Interview Date',
+            dataIndex: 'interviewDate',
+            key: 'interviewDate',
         },
         {
             title: 'Status',
             dataIndex: 'status',
             key: 'status',
-            render: (status: 'paid' | 'pending-payment' | 'awaiting-results' | 'view-results') => (
+            render: (status: 'paid' | 'pending-payment' | 'awaiting-results' | 'pass' | 'fail') => (
                 <Tag color={generateStatusColor(status)}>{status}</Tag>
             )
         },
@@ -66,20 +66,11 @@ const useParentApplicationsTable = () => {
             title: 'Actions',
             dataIndex: 'status',
             key: 'actions',
-            render: (status: 'paid' | 'pending-payment' | 'awaiting-results' | 'view-results', record: any) => (
+            render: (status: 'paid' | 'pending-payment' | 'awaiting-results' | 'pass' | 'fail', record: any) => (
                 <div className={"space-x-3 space-y-3"}>
                     <Link to={`view/${record.id}`}>
                         <Button icon={<EyeOutlined/>} type={"primary"}>View</Button>
                     </Link>
-
-                    {status === 'view-results' &&
-                        <Button icon={<FileDoneOutlined/>}
-                                className={"bg-green-500 text-white hover:text-white"}>Results</Button>
-                    }
-
-                    {status !== 'awaiting-results' && status !== 'view-results' &&
-                        <Button icon={<DeleteOutlined/>} type={"primary"} danger>Drop Application</Button>
-                    }
                 </div>
             )
         }

@@ -13,8 +13,8 @@ import {Button, Checkbox, Form, Input} from 'antd';
 const Login = () => {
     const navigate = useNavigate()
 
-    const handleSubmit = (values: any) => {
-        navigate('dashboard')
+    const handleSubmit = (_values: any) => {
+        navigate('otp')
     };
 
     return (
@@ -54,7 +54,7 @@ const Login = () => {
 
                         <Form.Item>
                             <Button type="primary" htmlType="submit" block>
-                                Submit
+                                Login
                             </Button>
                         </Form.Item>
                     </Form>

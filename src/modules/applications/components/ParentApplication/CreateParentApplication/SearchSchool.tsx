@@ -53,10 +53,10 @@ const SearchSchool = () => {
                     style={{width: 200}}
                     onSelect={handleSelect}
                     onSearch={onSearch}
-                    placeholder="input here"
+                    placeholder="School Name e.g. St. Francis"
                 />
                 <Button type={"primary"} icon={<SearchOutlined/>} loading={loading} onClick={handleSearch}>
-                    Search
+                    Search School
                 </Button>
             </div>
             {

@@ -1,8 +1,9 @@
 import {Button, Modal, Result, Table} from "antd";
-import React, {Dispatch, SetStateAction, useState} from 'react';
+import React, {Dispatch, SetStateAction, useEffect, useState} from 'react';
 import useStudentsTable from "../../../lib/hooks/use-students-table";
 import {availableChildren} from "../../../db/available-children";
 import {useNavigate} from "react-router-dom";
+import {formatAmount} from "../../../../common/lib";
 
 type ConfirmApplicationType = {
     isModalOpen: boolean
@@ -18,9 +19,14 @@ type ConfirmApplicationType = {
  */
 const ConfirmApplication: React.FC<ConfirmApplicationType> = ({isModalOpen, setIsModalOpen}) => {
     const navigate = useNavigate()
-    const columns = useStudentsTable()
     const [loading, setLoading] = useState(false);
     const [isConfirmed, setIsConfirmed] = useState(false);
+    const [applicants, setApplicants] = useState<{ id: number; name: string; age: string; image: string; }[]>([]);
+    const columns = useStudentsTable(applicants, setApplicants)
+
+    useEffect(() => {
+        setApplicants(availableChildren)
+    }, []);
 
     const handleOk = () => {
         setLoading(true)
@@ -65,14 +71,14 @@ const ConfirmApplication: React.FC<ConfirmApplicationType> = ({isModalOpen, setI
                 !isConfirmed && <div>
                     <p>School Name: <span className="font-semibold">Maria Goretti Secondary School</span></p>
                     <p>Application: <span className="font-semibold">Pre-Form One</span></p>
-                    <p>Date: <span className="font-semibold">12th-January-2023</span></p>
-                    <p>Time: <span className="font-semibold">12:00 PM</span></p>
-                    <p>Venue: <span className="font-semibold">Dining Hall</span></p>
+                    <p>Interview Date: <span className="font-semibold">12th-January-2023</span></p>
+                    <p>Interview Time: <span className="font-semibold">12:00 PM</span></p>
+                    <p>Amount: <span className="font-semibold">{formatAmount(20000 * applicants.length)}/=</span></p>
 
                     <p className="text-center font-semibold">Students Applying</p>
 
                     <Table
-                        dataSource={availableChildren}
+                        dataSource={applicants}
                         columns={columns}
                         rowKey={'id'}
                     />
@@ -83,7 +89,11 @@ const ConfirmApplication: React.FC<ConfirmApplicationType> = ({isModalOpen, setI
                 isConfirmed && <Result
                     status="success"
                     title="Application Completed"
-                    subTitle="You have successfully applied to Maria Goretti Secondary School. You will soon receive a control number for payment. Kindly pay before 20th-June-2023 to reserve a spot fot the interview."
+                    subTitle={<span>
+                        You have successfully applied to Maria Goretti Secondary School.
+                        You will soon receive a control number for payment.
+                        <div className="text-black">Kindly pay before 20th-June-2023 to reserve a spot fot the interview.</div>
+                    </span>}
                     extra={
                         <Button type="primary" key="view_applications" onClick={handleViewApplications}>
                             View Applications

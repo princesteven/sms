@@ -1,4 +1,9 @@
 import React from 'react';
+import useAdminApplicationsTable from "../lib/hooks/use-admin-applications-table";
+import {Button, Table} from "antd";
+import {adminApplications} from "../db/admin-applications";
+import {PlusOutlined} from "@ant-design/icons";
+import {Link, Outlet} from "react-router-dom";
 
 /**
  * @function
@@ -9,8 +14,23 @@ import React from 'react';
  * @author Prince Malipula
  */
 const AdminApplications = () => {
+    const columns = useAdminApplicationsTable()
+
     return (
-        <h1>Admin applications</h1>
+        <div className="space-y-4">
+            <Outlet/>
+            <div className="flex justify-end">
+                <Link to={'create'}>
+                    <Button type={'primary'} className={'bg-green-500'} icon={<PlusOutlined/>}>New Application</Button>
+                </Link>
+            </div>
+            <Table
+                dataSource={adminApplications}
+                columns={columns}
+                rowKey={'id'}
+                loading={false}
+            />
+        </div>
     )
 };
 

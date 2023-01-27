@@ -13,7 +13,7 @@ import {Button, Col, Form, Input, Row, Select} from "antd";
 const SchoolSignUp = () => {
     const navigate = useNavigate()
 
-    const handleSubmit = (values: any) => {
+    const handleSubmit = (_values: any) => {
         navigate('/')
     }
 
@@ -56,17 +56,7 @@ const SchoolSignUp = () => {
 
                 <Col span={12}>
                     <Form.Item
-                        label="Center Code"
-                        name="centerCode"
-                        rules={[{required: true, message: 'Please input your center code!'}]}
-                    >
-                        <Input/>
-                    </Form.Item>
-                </Col>
-
-                <Col span={12}>
-                    <Form.Item
-                        label="Email"
+                        label="Email (will be used as default admin password)"
                         name="email"
                         rules={
                             [
@@ -96,9 +86,9 @@ const SchoolSignUp = () => {
 
                 <Col span={12}>
                     <Form.Item
-                        label="Username"
-                        name="username"
-                        rules={[{required: true, message: 'Please input your admin default username!'}]}
+                        label="Physical Address"
+                        name="physicalAddress"
+                        rules={[{required: true, message: 'Please select your physical address!'}]}
                     >
                         <Input/>
                     </Form.Item>
@@ -106,8 +96,27 @@ const SchoolSignUp = () => {
 
                 <Col span={12}>
                     <Form.Item
-                        label="Password"
+                        label="Website"
+                        name="website"
+                    >
+                        <Input/>
+                    </Form.Item>
+                </Col>
+
+                <Col span={12}>
+                    <Form.Item
+                        label="Default Admin Password"
                         name="password"
+                        rules={[{required: true, message: 'Please input your admin default password!'}]}
+                    >
+                        <Input.Password/>
+                    </Form.Item>
+                </Col>
+
+                <Col span={12}>
+                    <Form.Item
+                        label="Admin Confirm Password"
+                        name="confirmPassword"
                         rules={[{required: true, message: 'Please input your admin default password!'}]}
                     >
                         <Input.Password/>

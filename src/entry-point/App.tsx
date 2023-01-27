@@ -1,15 +1,18 @@
 import React from 'react';
+import Otp from "../modules/auth/pages/otp";
 import {Route, Routes} from "react-router-dom";
 import Login from "../modules/auth/pages/login";
 import SignUp from "../modules/auth/pages/signUp";
 import Dashboard from "../modules/dashboard/pages";
 import {Layout} from "../modules/common/components";
 import ForgotPassword from "../modules/auth/pages/forgot-password";
+import ChildSelection from "../modules/applications/pages/child-selection";
 import AdminApplications from "../modules/applications/pages/admin-applications";
 import CreateApplication from "../modules/applications/pages/create-application";
 import ParentApplications from "../modules/applications/pages/parent-applications";
-import ChildSelection from "../modules/applications/pages/child-selection";
 import ViewParentApplication from "../modules/applications/pages/view-parent-application";
+import ViewAdminApplications from "../modules/applications/pages/view-admin-applications";
+import CreateApplicationAdmin from "../modules/applications/pages/create-application-admin";
 
 function App() {
     return (
@@ -17,6 +20,7 @@ function App() {
             <Route path={'/'} element={<Login/>}/>
             <Route path={'sign-up'} element={<SignUp/>}/>
             <Route path={'forgot-password'} element={<ForgotPassword/>}/>
+            <Route path={'otp'} element={<Otp/>}/>
             <Route
                 path={'/'}
                 element={<Layout/>}
@@ -28,7 +32,10 @@ function App() {
                         <Route path={'select-child'} element={<ChildSelection/>}/>
                     </Route>
                 </Route>
-                <Route path={'admin-applications'} element={<AdminApplications/>}/>
+                <Route path={'admin-applications'} element={<AdminApplications/>}>
+                    <Route path={'create'} element={<CreateApplicationAdmin />} />
+                    <Route path={'view/:id'} element={<ViewAdminApplications />} />
+                </Route>
             </Route>
         </Routes>
     );
