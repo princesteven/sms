@@ -56,7 +56,7 @@ const SchoolSignUp = () => {
 
                 <Col span={12}>
                     <Form.Item
-                        label="Email (will be used as default admin password)"
+                        label="Email (will be used as default admin username)"
                         name="email"
                         rules={
                             [
@@ -126,7 +126,7 @@ const SchoolSignUp = () => {
 
             <Form.Item>
                 <Button type="primary" htmlType="submit" block>
-                    Submit
+                    Sign Up!
                 </Button>
             </Form.Item>
 

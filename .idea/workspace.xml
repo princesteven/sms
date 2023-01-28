@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd4c2db3-e952-4974-9596-08553fbabc74" name="Changes" comment="feat: improvements after discussion" />
+    <list default="true" id="bd4c2db3-e952-4974-9596-08553fbabc74" name="Changes" comment="feat: improvements after discussion">
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/PrimaryButton/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/SecondaryButton/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/common/components/Select/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/components/PhotoUpload/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/components/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/db/genders.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/db/students.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/lib/hooks/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/lib/hooks/use-table-columns/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/pages/add_update.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/students/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entry-point/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entry-point/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-admin-applications-table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-admin-applications-table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-view-admin-applications-table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/applications/lib/hooks/use-view-admin-applications-table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/components/SignUp/Parent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/Parent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/components/SignUp/School/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/components/SignUp/School/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/auth/pages/signUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/auth/pages/signUp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/components/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/components/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/common/db/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/common/db/menu.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/princemalipula/Projects/React/Inspirations/sms/src/modules/auth/pages",
+    "last_opened_file_path": "/Users/princemalipula/Projects/React/Inspirations/sms/src/modules/common/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -41,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/common/components" />
+      <recent name="$PROJECT_DIR$/src/modules" />
       <recent name="$PROJECT_DIR$/src/modules/auth/pages" />
       <recent name="$PROJECT_DIR$/src/modules/applications/lib/hooks" />
-      <recent name="$PROJECT_DIR$/src/modules" />
       <recent name="$PROJECT_DIR$/src/modules/dashboard/lib" />
-      <recent name="$PROJECT_DIR$/src/modules/dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/modules/common" />
@@ -66,7 +87,7 @@
       <workItem from="1674588688255" duration="9909000" />
       <workItem from="1674653022702" duration="8063000" />
       <workItem from="1674754892926" duration="1340000" />
-      <workItem from="1674826667798" duration="6944000" />
+      <workItem from="1674826667798" duration="14115000" />
     </task>
     <task id="LOCAL-00001" summary="feat: improvements after discussion">
       <created>1674833579883</created>
@@ -75,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674833579883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: improvements after discussion">
+      <created>1674833657543</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674833657543</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -3,6 +3,8 @@ import React, {useState} from 'react';
 import {Button, Radio, RadioChangeEvent} from 'antd';
 import {ParentSignup, SchoolSignup} from "../components";
 import {Link} from "react-router-dom";
+import {BackwardOutlined} from "@ant-design/icons";
+
 
 /**
  * @function
@@ -30,17 +32,16 @@ const SignUp = () => {
                     buttonStyle="solid"
                 />
             </div>
-            <div className="mt-4">
-                <div className={"grid place-content-center"}>
-                    <div className={"bg-white rounded-lg px-10 py-6 space-y-8"}>
-                        {accountType === 'parent' && <ParentSignup/>}
-                        {accountType === 'school' && <SchoolSignup/>}
+            <div className="mt-4 grid place-items-center">
+                <div className={"bg-white rounded-lg px-10 py-6 space-y-8 w-7/12"}>
+                    {accountType === 'parent' && <ParentSignup/>}
+                    {accountType === 'school' && <SchoolSignup/>}
 
-                        <div className="grid place-content-center">
-                            <Link to={'/'} className={"text-center"}>
-                                <Button type={"link"} className={'font-semibold'}>Login</Button>
-                            </Link>
-                        </div>
+                    <div className="grid place-content-center">
+                        <Link to={'/'} className={"text-center"}>
+                            <Button type={"link"} className={'font-semibold'} icon={<BackwardOutlined/>}>Back to
+                                Login</Button>
+                        </Link>
                     </div>
                 </div>
             </div>

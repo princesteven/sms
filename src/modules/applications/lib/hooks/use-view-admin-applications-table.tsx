@@ -14,7 +14,7 @@ const useAdminApplicationsTable = () => {
             key: 'name',
         },
         {
-            title: 'Interview Date Date',
+            title: 'Interview Date',
             dataIndex: 'interviewDate',
             key: 'interviewDate',
         },

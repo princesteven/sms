@@ -134,7 +134,7 @@ const ParentSignUp = () => {
 
             <Form.Item>
                 <Button type="primary" htmlType="submit" block>
-                    Submit
+                    Sign Up!
                 </Button>
             </Form.Item>
 

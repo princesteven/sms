@@ -13,6 +13,8 @@ import ParentApplications from "../modules/applications/pages/parent-application
 import ViewParentApplication from "../modules/applications/pages/view-parent-application";
 import ViewAdminApplications from "../modules/applications/pages/view-admin-applications";
 import CreateApplicationAdmin from "../modules/applications/pages/create-application-admin";
+import Students from "../modules/students/pages";
+import AddUpdateStudent from "../modules/students/pages/add_update";
 
 function App() {
     return (
@@ -26,15 +28,22 @@ function App() {
                 element={<Layout/>}
             >
                 <Route path={'dashboard'} element={<Dashboard/>}/>
+
                 <Route path={'parent-applications'} element={<ParentApplications/>}>
                     <Route path={'view/:id'} element={<ViewParentApplication/>}/>
                     <Route path={'create'} element={<CreateApplication/>}>
                         <Route path={'select-child'} element={<ChildSelection/>}/>
                     </Route>
                 </Route>
+
                 <Route path={'admin-applications'} element={<AdminApplications/>}>
                     <Route path={'create'} element={<CreateApplicationAdmin />} />
                     <Route path={'view/:id'} element={<ViewAdminApplications />} />
+                </Route>
+
+                <Route path={'students'} element={<Students />}>
+                    <Route path={'create'} element={<AddUpdateStudent />} />
+                    <Route path={'view/:id'} element={<AddUpdateStudent />} />
                 </Route>
             </Route>
         </Routes>

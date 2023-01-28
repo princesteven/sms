@@ -8,8 +8,8 @@ export default [
         icon: <DesktopOutlined/>,
     },
     {
-        label: 'Option 2',
-        key: '2',
+        label: <Link to={'students'}>Students</Link>,
+        key: 'students',
         icon: <PieChartOutlined/>,
     },
     {
