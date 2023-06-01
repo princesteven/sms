@@ -1,0 +1,33 @@
+import { Link } from "react-router-dom";
+import {fe} from "../../../../common/configs";
+import { EditOutlined, EyeOutlined } from '@ant-design/icons';
+
+/**
+ * @function
+ * @name useTableColumns
+ * @description custom hook for creating table columns in each feature
+ * @version 1.0.0
+ * @since 1.0.0
+ * @author Prince Malipula
+ * @returns {Array}
+ */
+const useTableColumns = () => {
+  return [
+    {
+      title: "Actions",
+      dataIndex: 'actions',
+      render: (text: string, record: any) => (
+        <div className="flex md:space-x-8">
+          <Link to={`${fe.view}/${record.id}`} className="grid place-items-center">
+            <PrimaryButton icon={<EyeOutlined/>}>View</PrimaryButton>
+          </Link>
+          <Link to={`${fe.update}/${record.id}`}>
+              <WarningButton icon={<EditOutlined/>}>Update</WarningButton>
+          </Link>
+        </div>
+      )
+    }
+  ];
+};
+
+export default useTableColumns;

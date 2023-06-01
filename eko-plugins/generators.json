@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "eko-plugins",
+  "version": "0.0.1",
+  "generators": {
+    "eko-plugins": {
+      "factory": "./src/generators/eko-plugins/generator",
+      "schema": "./src/generators/eko-plugins/schema.json",
+      "description": "eko-plugins generator"
+    },
+    "feature-scaffolding": {
+      "factory": "./src/generators/feature-scaffolding/generator",
+      "schema": "./src/generators/feature-scaffolding/schema.json",
+      "description": "feature-scaffolding generator"
+    }
+  }
+}

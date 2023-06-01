@@ -1,0 +1,32 @@
+import React from 'react';
+import {Table} from "antd";
+import {students} from "../db/students";
+import {useTableColumns} from "../lib/hooks";
+import {Link, Outlet} from "react-router-dom";
+import {PlusOutlined} from "@ant-design/icons";
+import SuccessButton from "../../common/components/SuccessButton";
+
+/**
+ * @function
+ * @name <%= createFeatureName(name) %>
+ * @description <%= description ?? 'Sample feature description' %>
+ * @version 1.0.0
+ * @since 1.0.0
+ * @author Prince Malipula
+ */
+const <%= createFeatureName(name) %> = () => {
+    const columns = useTableColumns();
+
+    return (
+        <div>
+            <Table
+                dataSource={data}
+                columns={columns}
+                loading={false}
+            />
+            <Outlet />
+        </div>
+    )
+}
+
+export default <%= createFeatureName(name) %>

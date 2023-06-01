@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "feature-scaffolding": {
+      "factory": "./src/generators/feature-scaffolding/index.tsx",
+      "schema": "./src/generators/feature-scaffolding/schema.json",
+      "description": "feature-scaffolding generator"
+    }
+  }
+}
