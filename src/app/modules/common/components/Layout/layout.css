@@ -1,0 +1,96 @@
+.ant-menu-item {
+  color: white !important;
+  margin: 8px 0 !important;
+  display: flex;
+  align-items: center;
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+  transition: all linear 0.25s;
+
+}
+
+.ant-menu-item .anticon, .ant-menu-submenu .anticon {
+  color: white;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.ant-menu-submenu-title {
+  display: flex;
+  align-items: center;
+  color: #FFFFFF !important;
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+  margin: 0 !important;
+}
+
+.ant-menu-sub {
+  background: transparent !important;
+}
+
+.ant-menu-submenu-title .ant-menu-submenu-arrow {
+  color: #FFFFFF !important;
+}
+
+.ant-menu-item::after, .ant-menu-item::after {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   transform: scaleY(0.0001);
+   opacity: 0;
+   transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+   content: '';
+}
+
+ .ant-menu-submenu-title .ant-menu-inline.ant-menu-sub {
+   color: #FFFFFF !important;
+   background-color: transparent;
+ }
+
+.ant-menu-item-active, .ant-menu-submenu-active > .ant-menu-submenu-title, .ant-menu-submenu-open > .ant-menu-submenu-title,
+.ant-menu-item:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-submenu-title.ant-menu-item-selected, .ant-menu-item-selected {
+   background-color: #FFFFFF !important;
+}
+
+ .ant-menu-submenu-title.ant-submenu-item-selected {
+   color: #9a9a9a !important;
+ }
+
+ .ant-menu-item a {
+   color: #FFFFFF !important;
+ }
+
+ .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+   padding: 0 !important;
+   /* background-color: #094A8D !important; */
+ }
+
+ .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub .ant-menu-submenu-title {
+   padding: 0 16px !important;
+   margin: 0 !important;
+   padding-bottom: 50px !important;
+   padding-top: 10px !important;
+ }
+
+ .ant-menu-item-only-child .submenu-item span a {
+   background-color: transparent !important;
+   margin-bottom: 10px !important;
+ }
+
+.ant-menu-item-selected .ant-menu-item-only-child span a,
+.ant-menu-item-active.ant-menu-item-only-child span a,
+.ant-menu-item-active span.ant-menu-title-content a,
+.ant-menu-submenu-selected .anticon, .ant-menu-submenu-open .anticon,
+.ant-menu-submenu-active .anticon, .ant-menu-submenu-selected .ant-menu-title-content,
+.ant-menu-submenu-active .ant-menu-title-content, .ant-menu-submenu-selected .ant-menu-submenu-arrow,
+.ant-menu-submenu-active .ant-menu-submenu-arrow::before, .ant-menu-submenu-active .ant-menu-submenu-arrow::after,
+.ant-menu-item-selected span a, .ant-menu-item-active .anticon, .ant-menu-submenu-active .anticon,
+.ant-menu-submenu-open, .ant-menu-item-active, .ant-menu-item-selected .anticon,
+.ant-menu-item.ant-menu-item-active, .ant-menu-item.ant-menu-item-active .ant-menu-title-content,
+.ant-menu-item.ant-menu-item-selected, .ant-menu-submenu-active > .ant-menu-submenu-title,
+.ant-menu-submenu.ant-menu-submenu-open > .ant-menu-submenu-title, .ant-menu-submenu-active .ant-menu-submenu-arrow,
+.ant-menu-submenu-open .ant-menu-submenu-arrow{
+   color: #228c22 !important;
+ }

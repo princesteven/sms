@@ -1,0 +1,94 @@
+import React from 'react';
+import {genders} from "../db/genders";
+import {PhotoUpload} from "../components";
+import {useNavigate} from "react-router-dom";
+import Select from "../../common/components/Select";
+import {CheckOutlined, CloseOutlined} from "@ant-design/icons";
+import SuccessButton from "../../common/components/SuccessButton";
+import {Modal, Form, Row, Col, InputNumber, DatePicker, Input} from "antd";
+import DangerOutlinedButton from "../../common/components/DangerOutlinedButton";
+
+interface AddUpdate<%= createFeatureName(name) %>Props {
+  id: string;
+}
+
+/**
+ * @function
+ * @name AddUpdate<%= createFeatureName(name) %>
+ * @description add/update
+ * @version 1.0.0
+ * @since 1.0.0
+ * @author Prince Malipula
+ */
+const AddUpdate<%= createFeatureName(name) %>: React.FC<AddUpdate<%= createFeatureName(name) %>Props> = ({
+                                               id,
+                                             }) => {
+  const navigate = useNavigate();
+  const [<%= createFeatureName(name) %>Form] = Form.useForm();
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (values: any) => {
+
+  }
+
+  const handleCancel = () => {
+    navigate('..');
+  }
+
+  const handleReset = () => {
+    <%= createFeatureName(name) %>Form.resetFields()
+  }
+
+  return (
+    <Modal
+      open={true}
+      title="<%= createFeatureName(name) %>"
+      onOk={handleSubmit}
+      onCancel={handleCancel}
+      width={'75%'}
+      style={{top: 20}}
+      footer={[
+        <Button key="back" onClick={handleReset}>
+          Clear
+        </Button>,
+        <SuccessButton onClick={handleCancel} icon={<CheckOutlined />}>Submit</SuccessButton>,
+        <DangerOutlinedButton onClick={handleCancel} icon={<CloseOutlined />}>Cancel</DangerOutlinedButton>,
+      ]}
+    >
+      <Spin spinning={false}>
+        <Form
+          id="<%= createFeatureName(name) %>Form"
+          name="<%= createFeatureName(name) %>Form"
+          onFinish={handleSubmit}
+          form={<%= createFeatureName(name) %>Form}
+          layout="vertical"
+        >
+          <Row gutter={2}>
+            <Col span="12">
+              <FormItem
+                name="name"
+                rules={[{required: true}]}
+                label="Name"
+                validationErrors={validationErrors!}
+              >
+                <Input placeholder="Name"/>
+              </FormItem>
+            </Col>
+            <Col span="12">
+              <FormItem
+                name="description"
+                rules={[{required: true}]}
+                label="Description"
+                validationErrors={validationErrors!}
+              >
+                <Input placeholder="Description"/>
+              </FormItem>
+            </Col>
+          </Row>
+        </Form>
+      </Spin>
+    </Modal>
+  )
+}
+
+export default AddUpdate<%= createFeatureName(name) %>

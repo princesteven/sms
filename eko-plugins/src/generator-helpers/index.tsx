@@ -1,0 +1,9 @@
+export { ucfirst } from "./ucfirst";
+export { lcfirst } from "./lcfirst";
+export { updateAppStore } from "./update-app-store";
+export { createFileName } from "./create-file-name";
+export { updateAppMenus } from "./update-app-menus";
+export { updateAppRoutes } from "./update-app-routes";
+export { createFeatureName } from "./create-feature-name";
+export { updateFrontendUrl } from "./update-frontend-url";
+export { createFeatureFunctionName } from "./create-feature-function-name";

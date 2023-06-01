@@ -1,0 +1,7 @@
+import <%= createFeatureName(name) %> from "../pages";
+import { Route } from "react-router-dom";
+import { fe } from "../../common/configs";
+
+export default (
+  <Route path={fe.<%= createFileName(name) %>} element={<%= createFeatureName(name) %>} />
+);

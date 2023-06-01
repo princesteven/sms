@@ -1,0 +1,67 @@
+{
+  "name": "eko-plugins",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "eko-plugins/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/./eko-plugins",
+        "main": "eko-plugins/src/index.ts",
+        "tsConfig": "eko-plugins/tsconfig.lib.json",
+        "assets": [
+          "eko-plugins/*.md",
+          {
+            "input": "./eko-plugins/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./eko-plugins/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./eko-plugins",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./eko-plugins",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "eko-plugins/**/*.ts",
+          "eko-plugins/generators.json",
+          "eko-plugins/executors.json",
+          "eko-plugins/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "eko-plugins/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}
